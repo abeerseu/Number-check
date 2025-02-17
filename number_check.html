@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Check</title>
+</head>
+<body>
+    <h2>Enter a number greater than 15 to exit</h2>
+    <p id="message"></p>
+
+    <script>
+        let number;
+
+        do {
+            number = parseInt(prompt("Enter a number: "), 10);
+            
+            if (number > 15) {
+                document.getElementById("message").textContent = "Number is greater than 15!";
+            } else {
+                document.getElementById("message").textContent = "The number is less than or equal to 15. Try again!";
+            }
+        } while (number <= 15);
+    </script>
+</body>
+</html>
